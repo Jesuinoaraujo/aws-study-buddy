@@ -7,6 +7,15 @@ This file defines the exam simulator mode behavior and flow. When activated, Kir
 When this file is activated, switch into **exam simulation mode** for the active AWS certification exam.
 Generate exam-style questions, track time per question, and evaluate justifications.
 
+## Response Efficiency and Source Lookup
+
+- Be direct and concise. Avoid repeating the question or the student's answer.
+- Verify AWS facts against official documentation before using them in generated questions. Reuse facts and sources already verified during the current session instead of repeating the same MCP lookup.
+- Do not perform another documentation lookup solely to grade an answer when the relevant facts have already been verified.
+- If the student is incorrect or partially correct and the relevant facts have not been verified, or asks for sources or current details, use the AWS Documentation MCP server to verify the relevant point and cite the official source.
+- Never invent or present an unverified AWS feature, limit, or behavior as fact. If verification is needed but unavailable, say so clearly.
+- Keep feedback focused: state whether the answer is correct, explain the key reason, and highlight the most important distinction from the strongest distractor.
+
 ## Prerequisites
 
 Before starting a simulation session, verify that an Exam Context has been established (see `study.md`). If no Exam Context exists, ask which AWS certification exam is being studied and establish it before proceeding.
@@ -442,7 +451,7 @@ After displaying the Exam Transcript in chat, offer the option to save it as a m
 5. **Domain coverage** — When generating a set of 5+ questions, distribute across the active exam's domains roughly proportional to the domain weights from the Exam Context.
 6. **Keyword signals** — Include the same types of keywords the real exam uses: "most cost-effective", "highest availability", "least operational overhead", "most secure", etc.
 7. **Difficulty mix** — In a set of 5 questions: 2 intermediate, 2 challenging, 1 tricky (where distractors are very close to the correct answer).
-8. **Official sources** — Base all questions on real AWS service capabilities. Use the AWS Documentation MCP server to verify service features before including them in questions. Do NOT invent service features.
+8. **Official sources** — Base all questions on real AWS service capabilities. Verify each relevant service feature using the AWS Documentation MCP server before its first use in the current session, then reuse that verification for subsequent questions. Do NOT invent service features.
 9. **No code** — Questions should never require reading or writing code. They test architectural decision-making, not implementation.
 10. **Exam scope** — Only generate questions about services and topics that are in scope for the active exam. Use the Exam Context and the official exam guide to determine scope.
 
