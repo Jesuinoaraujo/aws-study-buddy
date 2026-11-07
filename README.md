@@ -23,8 +23,11 @@ Grounded in official AWS documentation via a bundled MCP server. No guessing, no
 - [Why this power?](#why-this-power)
 - [Features](#features)
 - [Supported exams](#supported-exams)
+- [Recursos oficiais e dicas de estudo para a CLF-C02](#recursos-oficiais-e-dicas-de-estudo-para-a-clf-c02)
 - [Recommended models](#recommended-models)
 - [Installation](#installation)
+  - [Guia em português para a turma](./GUIA-PARA-TURMA.md)
+  - [Uso com Google Antigravity no VS Code](./GUIA-PARA-TURMA.md#usar-no-vs-code-com-a-extensao-google-antigravity)
 - [Usage](#usage)
 - [How it works](#how-it-works)
 - [Troubleshooting](#troubleshooting)
@@ -80,6 +83,38 @@ Examples:
 | Specialty | MLS-C01 | AWS Certified Machine Learning - Specialty |
 
 > Current AWS certification exam codes are supported. Kiro looks up the exam guide dynamically.
+
+## Recursos oficiais e dicas de estudo para a CLF-C02
+
+Esta seção é voltada a quem está se preparando para a **AWS Certified Cloud Practitioner (CLF-C02)**. O AWS Study Buddy continua oferecendo suporte a outras certificações AWS; para consultar a ementa de outro exame, use o guia oficial correspondente.
+
+### Ementa oficial do exame
+
+De acordo com o [guia oficial da CLF-C02](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html), o conteúdo é dividido em quatro domínios:
+
+| Domínio | Peso do conteúdo pontuado |
+|---|---:|
+| Cloud Concepts | 24% |
+| Security and Compliance | 30% |
+| Cloud Technology and Services | 34% |
+| Billing, Pricing, and Support | 12% |
+
+Os pesos e objetivos podem ser atualizados pela AWS. Consulte o [guia oficial do exame](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html) para verificar as informações vigentes e os tópicos detalhados de cada domínio. A AWS também informa que o guia não é uma lista completa de todo o conteúdo que pode aparecer na prova.
+
+### Materiais recomendados
+
+- **[AWS Cloud Practitioner Essentials](https://aws.amazon.com/pt/training/course-descriptions/cloud-practitioner-essentials/):** curso digital gratuito da AWS sobre fundamentos de nuvem, serviços, segurança, arquitetura, preços e suporte.
+- **[Página oficial da certificação](https://aws.amazon.com/pt/certification/certified-cloud-practitioner/):** informações sobre o exame e a certificação.
+- **[AWS Well-Architected](https://aws.amazon.com/pt/architecture/well-architected/):** leitura complementar para conhecer princípios de arquitetura na AWS; não é necessário tratar o material completo como requisito para a CLF-C02.
+- **[FAQs da AWS](https://aws.amazon.com/pt/faqs/):** consulte as perguntas frequentes do serviço relacionado ao assunto que estiver estudando.
+
+### Dicas de preparação
+
+- Estude os domínios conforme os pesos do guia oficial, sem deixar de revisar os quatro.
+- Ao fazer simulados, procure entender por que a resposta escolhida é a melhor e por que as outras alternativas não atendem tão bem ao cenário.
+- Use os simulados como prática: as questões geradas pelo Study Buddy **não são questões oficiais** e não garantem aprovação.
+- A prática com serviços AWS é opcional para esta certificação. Se decidir experimentar serviços na sua conta, confira preços, limites e condições atuais para evitar cobranças inesperadas.
+- Organize os estudos em sessões regulares e use o guia oficial como referência principal. Cursos, FAQs, artigos e simulados são materiais complementares.
 
 ## Recommended models
 
