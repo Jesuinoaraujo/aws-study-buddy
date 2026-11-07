@@ -1,5 +1,12 @@
 # Kiro Study Buddy
 
+# AWS Study Buddy (Fork Otimizado)
+
+> Ferramenta interativa de estudos e simulador de exames para certificações da AWS, com foco atual na **AWS Certified Cloud Practitioner (CLF-C02)**.
+
+## 💡 Créditos e Agradecimentos
+Este repositório é um fork otimizado baseado no projeto original desenvolvido por **Filipe Guimarães**, que estruturou a base inicial para o balanceamento de alternativas em simuladores AWS. Nossos sinceros agradecimentos pela excelente contribuição à comunidade!
+
 > A [Kiro](https://kiro.dev) power designed to turn Kiro into a personal study companion for **AWS certification exams**.
 
 ![Kiro](https://img.shields.io/badge/Kiro-Power-FF9900?style=flat-square)
