@@ -123,6 +123,8 @@ No AWS account or credentials needed — the bundled MCP server only reads publi
 
 The AWS Documentation MCP server does not require an API key. Anyone who installs or forks this repository can use the power with their own Kiro setup, provided they have access to a model in Kiro, `uv` installed, and an internet connection. A fork copies the project files and configuration; it does not provide access to the original author's Kiro account, model usage, or quotas.
 
+Kiro offers a **free plan** for individual use, subject to its current usage credits, model availability, and terms. Each student needs their own Kiro account; this repository and its AWS documentation MCP server are free to use and do not require an AWS API key. Check the [current Kiro plans and limits](https://kiro.dev/pricing/) before you start. Usage beyond the free plan's included allowance may require a paid plan.
+
 ### Steps
 
 Choose one of the three installation methods:
@@ -132,12 +134,12 @@ Choose one of the three installation methods:
 1. Open Kiro
 2. Open the **Powers panel** from the sidebar
 3. Choose **Add power from GitHub URL**
-4. Enter: `https://github.com/aws-samples/sample-kiro-study-buddy`
+4. Enter: `https://github.com/Jesuinoaraujo/aws-study-buddy`
 
 **Option B — Clone with Git:**
 
 ```bash
-git clone https://github.com/aws-samples/sample-kiro-study-buddy.git
+git clone https://github.com/Jesuinoaraujo/aws-study-buddy.git
 ```
 
 Then:
@@ -148,7 +150,7 @@ Then:
 
 **Option C — Download ZIP (no Git required):**
 
-1. Open the [repository on GitHub](https://github.com/aws-samples/sample-kiro-study-buddy)
+1. Open [your AWS Study Buddy repository on GitHub](https://github.com/Jesuinoaraujo/aws-study-buddy)
 2. Select the **Code** button
 3. Choose **Download ZIP**
 4. Extract the downloaded archive to a folder on your machine
