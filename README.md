@@ -121,6 +121,8 @@ The key distinction: when the model acts as a **judge** (evaluating your answers
 
 No AWS account or credentials needed — the bundled MCP server only reads public AWS documentation.
 
+The AWS Documentation MCP server does not require an API key. Anyone who installs or forks this repository can use the power with their own Kiro setup, provided they have access to a model in Kiro, `uv` installed, and an internet connection. A fork copies the project files and configuration; it does not provide access to the original author's Kiro account, model usage, or quotas.
+
 ### Steps
 
 Choose one of the three installation methods:
