@@ -19,7 +19,12 @@ Calculate the per-question time budget dynamically from the Exam Context:
 per_question_budget = Exam Context time_limit_minutes / Exam Context question_count
 ```
 
-Use this as the benchmark for time tracking. Do NOT hardcode any time values.
+Use this as a calm benchmark for final statistics only.
+**IMPORTANT TIMING PRINCIPLES:**
+- NEVER rush, pressure, or hurry the student while reading questions.
+- Allow generous, comfortable reading and thinking time for every single question.
+- The student sets their own pace. Do not output countdowns, artificial time limits, or premature pause messages.
+- Only calculate the elapsed time calmly when the student voluntarily submits their response.
 
 ## Session Flow
 
