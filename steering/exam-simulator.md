@@ -385,6 +385,8 @@ Display the Exam Transcript in chat using this template. This transcript is disp
 📋 EXAM TRANSCRIPT
 [Exam Context exam_name]
 Exam Code: [Exam Context exam_code]
+Date & Time: [Current Date and Time, e.g. YYYY-MM-DD HH:MM]
+Session File: ExamResults/[Exam Context exam_code]/[YYYYMMDD-HHMM-EXAM_CODE].md
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Candidate Score: [scaled_score] / 1000
