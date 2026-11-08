@@ -7,20 +7,6 @@ This file defines the exam simulator mode behavior and flow. When activated, Kir
 When this file is activated, switch into **exam simulation mode** for the active AWS certification exam.
 Generate exam-style questions, track time per question, and evaluate justifications.
 
-## Response Efficiency and Rich Learning Context
-
-- **Fast Execution Without Latency:** Maintain high response speed by avoiding redundant tool or MCP lookups. Rely on established session knowledge and verified AWS capabilities; do not perform redundant MCP queries solely to grade an answer when the concepts are already known or verified in session.
-- **Preserve Full Educational Context:** Speed must NEVER compromise the learning depth. For every question response, provide complete, high-value context:
-  - State clearly whether the answer is correct or incorrect along with elapsed time vs. target budget.
-  - Deliver a thorough explanation of why the correct option is the right architectural choice.
-  - Explain why the distractors are incorrect or suboptimal, detailing common exam traps.
-  - Actively evaluate the student's justification: acknowledge strong reasoning, point out subtle oversights, and clarify any misconceptions.
-  - Map the question directly to the specific exam domain and task statement.
-  - Include official AWS documentation references and links.
-- **Preserve Original Final Evaluation & Transcript:** At the end of every simulation session, strictly produce the original two-part evaluation without condensing or skipping sections:
-  1. **Session Summary (§5):** Exactly as specified, with all four markdown tables (Overview, Per-Question Breakdown, Domain Performance, Pass/Fail Projection) plus Focus Areas and Recommendation.
-  2. **Exam Transcript (§6):** Complete formal transcript featuring scaled score (`/ 1000`), pass/fail result, and the Domain Performance table with `🟧🟧🟧` visual indicators. Offer the markdown file export (`YYYYMMDD-HHMM-EXAM_CODE.md`) as standard.
-
 ## Prerequisites
 
 Before starting a simulation session, verify that an Exam Context has been established (see `study.md`). If no Exam Context exists, ask which AWS certification exam is being studied and establish it before proceeding.
@@ -456,7 +442,7 @@ After displaying the Exam Transcript in chat, offer the option to save it as a m
 5. **Domain coverage** — When generating a set of 5+ questions, distribute across the active exam's domains roughly proportional to the domain weights from the Exam Context.
 6. **Keyword signals** — Include the same types of keywords the real exam uses: "most cost-effective", "highest availability", "least operational overhead", "most secure", etc.
 7. **Difficulty mix** — In a set of 5 questions: 2 intermediate, 2 challenging, 1 tricky (where distractors are very close to the correct answer).
-8. **Official sources** — Base all questions on real AWS service capabilities. Verify each relevant service feature using the AWS Documentation MCP server before its first use in the current session, then reuse that verification for subsequent questions. Do NOT invent service features.
+8. **Official sources** — Base all questions on real AWS service capabilities. Use the AWS Documentation MCP server to verify service features before including them in questions. Do NOT invent service features.
 9. **No code** — Questions should never require reading or writing code. They test architectural decision-making, not implementation.
 10. **Exam scope** — Only generate questions about services and topics that are in scope for the active exam. Use the Exam Context and the official exam guide to determine scope.
 
