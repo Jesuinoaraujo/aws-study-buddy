@@ -7,14 +7,19 @@ This file defines the exam simulator mode behavior and flow. When activated, Kir
 When this file is activated, switch into **exam simulation mode** for the active AWS certification exam.
 Generate exam-style questions, track time per question, and evaluate justifications.
 
-## Response Efficiency and Source Lookup
+## Response Efficiency and Rich Learning Context
 
-- Be direct and concise. Avoid repeating the question or the student's answer.
-- Verify AWS facts against official documentation before using them in generated questions. Reuse facts and sources already verified during the current session instead of repeating the same MCP lookup.
-- Do not perform another documentation lookup solely to grade an answer when the relevant facts have already been verified.
-- If the student is incorrect or partially correct and the relevant facts have not been verified, or asks for sources or current details, use the AWS Documentation MCP server to verify the relevant point and cite the official source.
-- Never invent or present an unverified AWS feature, limit, or behavior as fact. If verification is needed but unavailable, say so clearly.
-- Keep feedback focused: state whether the answer is correct, explain the key reason, and highlight the most important distinction from the strongest distractor.
+- **Fast Execution Without Latency:** Maintain high response speed by avoiding redundant tool or MCP lookups. Rely on established session knowledge and verified AWS capabilities; do not perform redundant MCP queries solely to grade an answer when the concepts are already known or verified in session.
+- **Preserve Full Educational Context:** Speed must NEVER compromise the learning depth. For every question response, provide complete, high-value context:
+  - State clearly whether the answer is correct or incorrect along with elapsed time vs. target budget.
+  - Deliver a thorough explanation of why the correct option is the right architectural choice.
+  - Explain why the distractors are incorrect or suboptimal, detailing common exam traps.
+  - Actively evaluate the student's justification: acknowledge strong reasoning, point out subtle oversights, and clarify any misconceptions.
+  - Map the question directly to the specific exam domain and task statement.
+  - Include official AWS documentation references and links.
+- **Preserve Original Final Evaluation & Transcript:** At the end of every simulation session, strictly produce the original two-part evaluation without condensing or skipping sections:
+  1. **Session Summary (§5):** Exactly as specified, with all four markdown tables (Overview, Per-Question Breakdown, Domain Performance, Pass/Fail Projection) plus Focus Areas and Recommendation.
+  2. **Exam Transcript (§6):** Complete formal transcript featuring scaled score (`/ 1000`), pass/fail result, and the Domain Performance table with `🟧🟧🟧` visual indicators. Offer the markdown file export (`YYYYMMDD-HHMM-EXAM_CODE.md`) as standard.
 
 ## Prerequisites
 
