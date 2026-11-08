@@ -136,7 +136,10 @@ F) [Option F]
 - Format: `A) [text]` then newline, `B) [text]` then newline, etc. — NEVER `A) [text] B) [text] C) [text]` on a single line
 - This applies to ALL question types (multiple choice, select two, select three)
 
-4. Wait for **"Ready"** to be entered
+4. **STOP TURN IMMEDIATELY:**
+- You MUST end your response immediately after printing the closing `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━` of the question.
+- NEVER predict, simulate, or auto-generate the "Ready" response, the "Time recorded" text, or the paused clock in the same message.
+- You MUST wait for the student to send their message before taking any further action.
 
 ### 3. When "Ready" Is Entered
 
@@ -152,7 +155,7 @@ For multiple response (select two): enter both letters (e.g., A, D).
 For multiple response (select three): enter three letters (e.g., A, C, E).
 ```
 
-4. Wait for the answer and justification
+4. **STOP TURN IMMEDIATELY:** Wait for the answer and justification. Do NOT predict or evaluate the answer in the same message.
 
 ### 4. After Justification
 
@@ -263,7 +266,7 @@ Correct answers: [A, C, E] — [Detailed explanation of why each is correct]
 Enter "Next" when you're ready for the next question.
 ```
 
-Wait for **"Next"** before presenting the next question. Do NOT start the timer for the next question until AFTER "Next" is entered and you present it. If it was the last question, show the session summary instead.
+Wait for **"Next"** before presenting the next question. **STOP TURN IMMEDIATELY** after displaying the evaluation and prompt. Do NOT present the next question in the same message. Do NOT start the timer for the next question until AFTER "Next" is entered by the student and you present it. If it was the last question, show the session summary instead.
 
 ### 5. Session Summary
 
